@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
 html {
     scroll-behavior: smooth;
   }
@@ -12,20 +15,19 @@ html {
 }
 
 :root {
-    --darkRed: #951a1d;
+    --darkRed: #b61113;
     /* --gap:2rem; */
 }
 
 
 .container{
-width: 50rem;
+max-width: 50rem;
 margin: 0 auto;
-background-color: rgba(0, 0, 0, 0.3);
+padding: 0 1rem;
 }
 
 .flex{
     display: flex;
-    gap: var(--gap, 1rem);
 }
 
 .img-resp {
@@ -33,9 +35,25 @@ background-color: rgba(0, 0, 0, 0.3);
     height: auto;
 }
 
+>
+
+
+
+
+
+
+/*
+----------------------------
+START Navigation
+----------------------------
+*/
+
+
 .main-navigation{
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .main-navigation li a{
     text-decoration: none;
@@ -43,23 +61,119 @@ background-color: rgba(0, 0, 0, 0.3);
 
 nav ul {
     list-style-type: none;
+    gap: var(--gap, 1rem);
   }
 nav {
+    width: 100%;
     padding: 0 1rem;
 }
 
 li a {
     color:white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    display:block;
+    padding: 0.2rem 1rem;
+}
+li a:hover{
+    color:var(--darkRed);
 }
 
-@media (max-width: 1000px) {
+
+.hamburger{
+    display: none;
+}
+@media (max-width: 40em) {
+    .main-navigation {
+        padding-top: 1.3rem;
+
+    }
     .main-navigation{
         flex-direction: column;
     }
-    .logo{
-        display: none;
+    .main-navigation li{
+        text-align: center;
+    }
+    .main-navigation li{
+        padding-top:0.05rem;
+        padding-bottom:0.05rem;
+    }
+    li a {
+        padding: 0rem 1rem;
+    }
     }
 
+.limit8 {
+    max-width: 8rem;
+}
+
+.padding4{
+padding:0.5rem;
+}
+
+.header-menu{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header{
+    background-image: url(images/isuzu-header-bg.png);
+    min-height: 20rem;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hamb{
+    display: flex;
+    justify-content: end;
+}
+
+.hamburger{
+    padding-bottom:1rem;
+    padding-right: 2rem;
+    margin: 1rem 0;
+}
+@media (max-width: 40em) {
+    .hamburger{
+        display: block;
     }
+    }
+.border-menu {
+    position: relative;
+    padding-left: 1.25em;
+  }
+  .border-menu:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    width: 2em;
+    height: 0.125em;
+    border-top: 0.375em double rgb(243, 243, 243);
+    border-bottom: 0.125em solid rgb(255, 255, 255);
+  }
+
+  .hidden{
+      display: none;
+  }
 
 
+  .header-menu{
+      position: fixed;
+      width: 100%;
+  }
+
+
+
+  .logo{
+      display: flex;
+      padding-top:3rem;
+      justify-content: space-between;
+  }
+
+  /*
+----------------------------
+End:::Navigation
+----------------------------
+*/

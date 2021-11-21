@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <script>
+        function openm() {
+  var x = document.getElementById("main-navigation");
+
+  x.classList.toggle("hidden")
+}
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,68 +44,83 @@
 
 <body>
 
-    <div class="container">
-        <nav class="flex">
-            <div class="logo">
-                <img src="https://isuzu.ba/images/metag-meni-2.png" alt="" class="img-resp">
+    <header>
+        <div class="header-menu">
+            <div class="container hamb">
+                <div class="hamburger">
+                <a href="javascript:void(0);"  onclick="openm()" > <div class="border-menu"></div></a>
+                </div>
             </div>
-            <ul id="main-navigation" class="main-navigation flex">
-                <li class="active">
-                    <a href="index.html">
-                        <span aria-hidden="true">00</span> D-MAX
-                    </a>
-                </li>
+            <div class="container">
+                <nav>
+                    <ul id="main-navigation" class="main-navigation flex">
+                        <li class="active">
+                            <a href="index.html">
+                                D-MAX
+                            </a>
+                        </li>
 
-                <li class="active">
-                    <a href="index.html">
-                        <span aria-hidden="true">01</span> KAMIONI
-                    </a>
-                </li>
+                        <li class="active">
+                            <a href="index.html">
+                                Kamioni
+                            </a>
+                        </li>
 
-                <li class="active">
-                    <a href="index.html">
-                        <span aria-hidden="true">02</span> USLUGE
-                    </a>
-                </li>
+                        <li class="active">
+                            <a href="index.html">
+                                Usluge
+                            </a>
+                        </li>
 
-                <li class="active">
-                    <a href="index.html">
-                        <span aria-hidden="true">03</span> CJENOVNICI
-                    </a>
-                </li>
+                        <li class="active">
+                            <a href="index.html">
+                                Cjenovnici
+                            </a>
+                        </li>
 
-                <li class="active">
-                    <a href="index.html">
-                        <span aria-hidden="true">04</span> O NAMA
-                    </a>
-                </li>
+                        <li class="active">
+                            <a href="index.html">
+                                O nama
+                            </a>
+                        </li>
 
-                <li class="active">
-                    <a href="index.html">
-                        <span aria-hidden="true">04</span> KONTAKT
-                    </a>
-                </li>
+                        <li class="active">
+                            <a href="index.html">
+                                Kontakt
+                            </a>
+                        </li>
 
-            </ul>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="logo">
+                <div class="limit8">
+                    <img src="images/isuzu-logo.svg" alt="" class="img-resp  ">
+                </div>
+
+                <div class="limit8">
+                    <img src="https://isuzu.ba/images/metag-meni-2.png" alt="" class="img-resp ">
+                </div>
+
+            </div>
+        </div>
+     </header>
 
 
 
 
-        </nav>
-    </div>
 
 
-    <head>
+        <section style="height: 1200px; background-color: aquamarine;">
 
-    </head>
+        </section>
 
-    <section>
+        <footer>
 
-    </section>
-
-    <footer>
-
-    </footer>
+        </footer>
 
 </body>
 
