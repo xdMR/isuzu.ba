@@ -4,10 +4,10 @@
 <head>
     <script>
         function openm() {
-  var x = document.getElementById("main-navigation");
+            var x = document.getElementById("main-navigation");
 
-  x.classList.toggle("hidden")
-}
+            x.classList.toggle("hidden")
+        }
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Isuzu BiH</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&&display=swap"
+        rel="stylesheet">
+
+
+
 
     <link rel="stylesheet" type="text/css" href="css/navigacija.css">
     <link rel="stylesheet" type="text/css" href="css/master.css">
@@ -48,7 +57,9 @@
         <div class="header-menu">
             <div class="container hamb">
                 <div class="hamburger">
-                <a href="javascript:void(0);"  onclick="openm()" > <div class="border-menu"></div></a>
+                    <a href="javascript:void(0);" onclick="openm()">
+                        <div class="border-menu"></div>
+                    </a>
                 </div>
             </div>
             <div class="container">
@@ -107,20 +118,183 @@
 
             </div>
         </div>
-     </header>
+
+
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="images/video_min.mp4" type="video/mp4">
+          </video>
+
+    </header>
 
 
 
 
 
 
-        <section style="height: 1200px; background-color: aquamarine;">
 
-        </section>
+    <section class="" style="background-color: whitesmoke;">
+        <div class="split container">
 
-        <footer>
 
-        </footer>
+            <div class="one-third">
+                <div class="tab">
+
+
+                    <div class="header">
+                        <h2>Single</h2>
+                    </div>
+
+
+                    <div class="car-image">
+                        <img id="single" src="/images/single.png" alt="" class="img-resp">
+                    </div>
+
+                    <div id="single-variant" class="variant">
+                        N57
+                    </div>
+
+                    <div class="colors flex" style="justify-content: center;">
+                        <span style="background-color:#5b6268;" class="dot"
+                        onclick='document.getElementById("single").src="images/single/ISUZU_D-Max_SINGLE_Obsidian-Gray.png";
+                        document.getElementById("single-variant").innerHTML="N57";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#d3d3d3;" class="dot"
+                        onclick='document.getElementById("single").src="images/single/Splash_White SINGLE_N57-min.png";
+                        document.getElementById("single-variant").innerHTML="N60 B";
+                        '
+                        ></span>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="one-third">
+                <div class="tab">
+                    <div class="header">
+                        <h2>Crew</h2>
+                    </div>
+
+                    <div class="car-image">
+                        <img id="crew" src="/images/crew/ISUZU_D-Max_Obsidian-Gray.png" alt="" class="img-resp">
+                    </div>
+
+                    <div id="crew-variant" class="variant">
+                        N60 B
+                    </div>
+
+
+
+                    <div class="colors flex" style="justify-content: center;">
+                        <span style="background-color:#353739;" class="dot"
+                        onclick='document.getElementById("crew").src="images/crew/ISUZU_D-Max_Obsidian-Gray.png";
+                        document.getElementById("crew-variant").innerHTML="N60 B";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#b91621;" class="dot"
+                        onclick='document.getElementById("crew").src="images/crew/ISUZU_D-Max_Red-Spinel-Mica.png";
+                        document.getElementById("crew-variant").innerHTML="N60 BB";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#103f74;" class="dot"
+                        onclick='document.getElementById("crew").src="images/crew/ISUZU_D-Max_Sapphire-Blue-Mica.png";
+                        document.getElementById("crew-variant").innerHTML="N60 F";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#bb512e;" class="dot"
+                        onclick='document.getElementById("crew").src="images/crew/ISUZU_D-Max_Valencia-orange-Metallic.png";
+                        document.getElementById("crew-variant").innerHTML="N60 FF";
+                        '
+                        ></span>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="one-third">
+                <div class="tab">
+                    <div class="header">
+                        <h2>Space</h2>
+                    </div>
+
+                    <div class="car-image">
+                        <img id="space" src="/images/space/ISUZU_D-Max_Splash_White Isuzu_D-Max_Space_N57.png" alt="" class="img-resp">
+                    </div>
+
+                    <div id="space-variant" class="variant">
+                        N57
+                    </div>
+
+
+
+                    <div class="colors flex" style="justify-content: center;">
+                        <span style="background-color:#d3d3d3;" class="dot"
+                        onclick='document.getElementById("space").src="images/space/ISUZU_D-Max_Splash_White Isuzu_D-Max_Space_N57.png";
+                        document.getElementById("space-variant").innerHTML="N60 B";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#353739;" class="dot"
+                        onclick='document.getElementById("space").src="images/space/ISUZU_D_Max_Space_N60B_Obsidian_Gray-min.png";
+                        document.getElementById("space-variant").innerHTML="N60 B";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#b91621;" class="dot"
+                        onclick='document.getElementById("space").src="images/space/ISUZU_D_Max_Space_N60BB_Red_Spinel_Mica-min.png";
+                        document.getElementById("space-variant").innerHTML="N60 BB";
+                        '
+                        ></span>
+
+
+                        <span style="background-color:#103f74;" class="dot"
+                        onclick='document.getElementById("space").src="images/space/ISUZU_D-Max_Space_N60F_Sapphire_Blue_Mica-min.png";
+                        document.getElementById("space-variant").innerHTML="N60 F";
+                        '
+                        ></span>
+
+
+
+                        <span style="background-color:#bb512e;" class="dot"
+                        onclick='document.getElementById("space").src="images/space/ISUZU_D-Max_Valencia orange_Metallic_front SPACE_N60FF-min.png";
+                        document.getElementById("space-variant").innerHTML="N60 BB";
+                        '
+                        ></span>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <section style="height: 1200px; background-color: aquamarine;">
+
+    </section>
+
+    <footer>
+
+    </footer>
 
 </body>
 
