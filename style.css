@@ -54,7 +54,9 @@ section ul {
 .split {
   display: flex;
 }
-
+.split{
+  flex-wrap: wrap;
+}
 .text-white{
     color:white;
 }
@@ -397,3 +399,61 @@ footer a:hover{
 }
 
 
+/* ==========KATALOZI============= */
+
+.preuzmi-btn {
+    min-width: 120px;
+    display: inline-block;
+    background-color: var(--darkRed);
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0rem;
+    padding: 0.2rem 1rem;
+    border-radius: 2px;
+    font-size: 1.2em;
+  }
+  .preuzmi-btn:hover{
+      background-color: #95070a;
+  }
+  .pdf-image{
+      max-width: 140px;
+      margin: 0 auto;
+      margin-top:1rem;
+
+  }
+  .katalog-opis {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-top:0rem;
+  }
+
+  #katalozikamioni .one-third{
+    flex-basis:25%;
+  }
+  #katalozikamioni .preuzmi-btn{
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    font-size: 1.1em;
+  }
+
+  .linktodocs h2{
+    font-weight: 400;
+    margin-left:0;
+    font-size:1.1rem;
+  }
+  .linktodocs a{
+    text-decoration: none;
+    color:rgb(22, 22, 22);
+    display: inline-block;
+    background-color: #e6e6e9;
+    padding: 0.1em 1em;
+  }
+  .linktodocs a:hover{
+    color:black;
+    background-color: #cacacf;
+  }
