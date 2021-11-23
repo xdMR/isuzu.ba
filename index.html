@@ -5,7 +5,6 @@
     <script>
         function openm() {
             var x = document.getElementById("main-navigation");
-
             x.classList.toggle("hidden")
         }
     </script>
@@ -55,48 +54,48 @@
 
     <header>
         <div class="header-menu">
-            <div class="container hamb">
+            <div class="container hamb" style="">
                 <div class="hamburger">
-                    <a href="javascript:void(0);" onclick="openm()">
+                    <a href="javascript:void(0);" onclick="togglem()">
                         <div class="border-menu"></div>
                     </a>
                 </div>
             </div>
             <div class="container">
-                <nav>
-                    <ul id="main-navigation" class="main-navigation flex">
+                <nav  id="main-navigation" class="hidden">
+                    <ul class="main-navigation flex">
                         <li class="active">
-                            <a href="index.html#dmax">
+                            <a class="menuItem" href="index.html#dmax">
                                 D-MAX
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#kamioni">
+                            <a class="menuItem" href="index.html#kamioni">
                                 Kamioni
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#usluge">
+                            <a class="menuItem" href="index.html#usluge">
                                 Usluge
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="cjenovnici.html">
+                            <a class="menuItem" href="cjenovnici.html">
                                 Cjenovnici
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#onama">
+                            <a class="menuItem" href="index.html#onama">
                                 O nama
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#kontakt">
+                            <a class="menuItem" href="index.html#kontakt">
                                 Kontakt
                             </a>
                         </li>
@@ -125,6 +124,7 @@
         </video>
 
     </header>
+
 
 
 
@@ -613,5 +613,25 @@
     </footer>
 
 </body>
+<script>
+    const menuItems = document.querySelectorAll(".menuItem");
+    menuItems.forEach(
+        function (menuItem) {
+            menuItem.addEventListener("click", togglem);
+        }
+    )
 
+
+    function togglem() {
+        var x = document.getElementById("main-navigation");
+
+        if (x.classList.contains("hidden")) {
+            x.classList.remove("hidden")
+        }
+        else {
+            x.classList.add("hidden")
+        }
+
+    }
+</script>
 </html>

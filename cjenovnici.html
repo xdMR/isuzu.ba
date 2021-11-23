@@ -2,13 +2,7 @@
 <html lang="en">
 
 <head>
-    <script>
-        function openm() {
-            var x = document.getElementById("main-navigation");
 
-            x.classList.toggle("hidden")
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,9 +45,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <style>
-        h4{
+        h4 {
             padding-top: 2rem;
-            font-size:1.5rem;
+            font-size: 1.5rem;
             font-weight: 500;
         }
     </style>
@@ -63,48 +57,48 @@
 
     <header style="min-height: 30vh !important; background-image: url(images/isuzu-header-bg.png);">
         <div class="header-menu">
-            <div class="container hamb">
+            <div class="container hamb" style="">
                 <div class="hamburger">
-                    <a href="javascript:void(0);" onclick="openm()">
+                    <a href="javascript:void(0);" onclick="togglem()">
                         <div class="border-menu"></div>
                     </a>
                 </div>
             </div>
             <div class="container">
-                <nav>
-                    <ul id="main-navigation" class="main-navigation flex">
+                <nav  id="main-navigation" class="hidden">
+                    <ul class="main-navigation flex">
                         <li class="active">
-                            <a href="index.html#dmax">
+                            <a class="menuItem" href="index.html#dmax">
                                 D-MAX
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#kamioni">
+                            <a class="menuItem" href="index.html#kamioni">
                                 Kamioni
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#usluge">
+                            <a class="menuItem" href="index.html#usluge">
                                 Usluge
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="cjenovnici.html">
+                            <a class="menuItem" href="cjenovnici.html">
                                 Cjenovnici
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#onama">
+                            <a class="menuItem" href="index.html#onama">
                                 O nama
                             </a>
                         </li>
 
                         <li class="active">
-                            <a href="index.html#kontakt">
+                            <a class="menuItem" href="index.html#kontakt">
                                 Kontakt
                             </a>
                         </li>
@@ -160,7 +154,8 @@
                     </div>
 
                     <div class="center text-center">
-                        <a target="_blank" href="docs/cjenovnikcrew.pdf" class="preuzmi-btn center">Preuzmite cjenovnik</a>
+                        <a target="_blank" href="docs/cjenovnikcrew.pdf" class="preuzmi-btn center">Preuzmite
+                            cjenovnik</a>
                     </div>
                 </div>
             </div>
@@ -177,7 +172,8 @@
                     </div>
 
                     <div class="center text-center">
-                        <a target="_blank" href="docs/cjenovniksingle.pdf" class="preuzmi-btn center">Preuzmite cjenovnik</a>
+                        <a target="_blank" href="docs/cjenovniksingle.pdf" class="preuzmi-btn center">Preuzmite
+                            cjenovnik</a>
                     </div>
                 </div>
             </div>
@@ -194,7 +190,8 @@
                     </div>
 
                     <div class="center text-center">
-                        <a target="_blank" href="docs/cjenovnikspace.pdf" class="preuzmi-btn center">Preuzmite cjenovnik</a>
+                        <a target="_blank" href="docs/cjenovnikspace.pdf" class="preuzmi-btn center">Preuzmite
+                            cjenovnik</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +223,8 @@
                     </div>
 
                     <div class="center text-center">
-                        <a target="_blank" href="docs/cjenovnikFserije2022.pdf" class="preuzmi-btn center">Preuzmite cjenovnik</a>
+                        <a target="_blank" href="docs/cjenovnikFserije2022.pdf" class="preuzmi-btn center">Preuzmite
+                            cjenovnik</a>
                     </div>
                 </div>
             </div>
@@ -243,7 +241,8 @@
                     </div>
 
                     <div class="center text-center">
-                        <a target="_blank" href="docs/cjenovnikm212022.pdf" class="preuzmi-btn center">Preuzmite cjenovnik</a>
+                        <a target="_blank" href="docs/cjenovnikm212022.pdf" class="preuzmi-btn center">Preuzmite
+                            cjenovnik</a>
                     </div>
                 </div>
             </div>
@@ -262,7 +261,8 @@
                     </div>
 
                     <div class="center text-center">
-                        <a target="_blank" href="docs/cjenovnikFserije.pdf" class="preuzmi-btn center">Preuzmite cjenovnik</a>
+                        <a target="_blank" href="docs/cjenovnikFserije.pdf" class="preuzmi-btn center">Preuzmite
+                            cjenovnik</a>
                     </div>
                 </div>
             </div>
@@ -286,8 +286,9 @@
 
     <footer class="black">
         <div class="container">
-            <div style="display: block; margin: 0  auto; position: relative; top:-2.5rem; max-width: 160px; background-color: rgb(24, 24, 27); padding:1rem 1.4rem;">
-                <img src="images/isuzu-logo.svg" alt="" class="img-resp" >
+            <div
+                style="display: block; margin: 0  auto; position: relative; top:-2.5rem; max-width: 160px; background-color: rgb(24, 24, 27); padding:1rem 1.4rem;">
+                <img src="images/isuzu-logo.svg" alt="" class="img-resp">
             </div>
 
         </div>
@@ -310,10 +311,11 @@
 
             <div class="one-third">
                 <p class="clean-top"><strong>Prodaja vozila:<br>
-                    Tel</strong> +387 51 490 999<br>
-                <a href="mailto:prodaja@metago.info" target="_blank">prodaja@<span class="il">metago</span>.info<br>
-                </a><a href="mailto:prodaja@metago.info" target="_blank">prodaja1@<span class="il">metago</span>.info</a>
-            </p>
+                        Tel</strong> +387 51 490 999<br>
+                    <a href="mailto:prodaja@metago.info" target="_blank">prodaja@<span class="il">metago</span>.info<br>
+                    </a><a href="mailto:prodaja@metago.info" target="_blank">prodaja1@<span
+                            class="il">metago</span>.info</a>
+                </p>
             </div>
 
         </div>
@@ -321,5 +323,28 @@
     </footer>
 
 </body>
+
+
+<script>
+    const menuItems = document.querySelectorAll(".menuItem");
+    menuItems.forEach(
+        function (menuItem) {
+            menuItem.addEventListener("click", togglem);
+        }
+    )
+
+
+    function togglem() {
+        var x = document.getElementById("main-navigation");
+
+        if (x.classList.contains("hidden")) {
+            x.classList.remove("hidden")
+        }
+        else {
+            x.classList.add("hidden")
+        }
+
+    }
+</script>
 
 </html>
