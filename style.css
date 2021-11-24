@@ -54,15 +54,15 @@ section ul {
 .split {
   display: flex;
 }
-.split{
+.split {
   flex-wrap: wrap;
 }
-.text-white{
-    color:white;
+.text-white {
+  color: white;
 }
 
-.black{
-    background-color: rgb(24, 24, 27);
+.black {
+  background-color: rgb(24, 24, 27);
 }
 
 .sectionHeadline h2 {
@@ -187,6 +187,7 @@ li a:hover {
 
 .header-menu {
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 header {
@@ -199,13 +200,24 @@ header {
   background-size: cover;
 }
 
-
+.hidden-menu {
+  display: none;
+}
+@media (min-width:40em) {
+  .hidden-menu {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 0.25rem 1rem;
+}
+}
 
 @media (max-width: 40em) {
   header {
     /* background-image: url(images/isuzu-header-bg.png); */
     min-height: 350px;
-}
+  }
 }
 
 #background-video {
@@ -222,8 +234,7 @@ header {
 .hamb {
   display: flex;
   justify-content: end;
-  right:0;
-  min-height: 10px;
+  right: 0;
 }
 
 .hamburger {
@@ -231,6 +242,7 @@ header {
   padding-right: 2rem;
   margin: 1rem 0;
 }
+
 @media (max-width: 40em) {
   .hamburger {
     display: block;
@@ -249,10 +261,6 @@ header {
   height: 0.125em;
   border-top: 0.375em double rgb(243, 243, 243);
   border-bottom: 0.125em solid rgb(255, 255, 255);
-}
-
-.hidden {
-  display: none;
 }
 
 .header-menu {
@@ -340,14 +348,14 @@ End:::Car Tab
 }
 
 #usluge .tab:hover {
-    border: 1px solid rgb(220, 217, 228);
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      183deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgb(240, 239, 239) 100%
-    );
-  }
+  border: 1px solid rgb(220, 217, 228);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    183deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(240, 239, 239) 100%
+  );
+}
 #usluge .service-image {
   max-width: 80px;
   display: block;
@@ -375,98 +383,108 @@ End:::Car Tab
   background-color: rgb(19, 19, 19);
 }
 
-#usluge .tab{
-    margin: 1rem;
-    padding: 1.5rem 0.5rem;
+#usluge .tab {
+  margin: 1rem;
+  padding: 1.5rem 0.5rem;
 }
 
 /*
 ======================= */
-footer{
-    color:rgb(238, 238, 245);
+footer {
+  color: rgb(238, 238, 245);
 }
 
-footer{
-    padding: 0.8rem 0 1.5rem 0;
+footer {
+  padding: 0.8rem 0 1.5rem 0;
 }
 
 footer h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
-footer .clean-top{
-    margin-top:0;
+footer .clean-top {
+  margin-top: 0;
 }
-footer a{
-    color:rgb(235, 215, 215);
-}
-
-footer a:hover{
-    color:rgb(214, 136, 136);
+footer a {
+  color: rgb(235, 215, 215);
 }
 
+footer a:hover {
+  color: rgb(214, 136, 136);
+}
 
 /* ==========KATALOZI============= */
 
 .preuzmi-btn {
-    min-width: 120px;
-    display: inline-block;
-    background-color: var(--darkRed);
-    margin: 0 auto;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 0rem;
-    padding: 0.2rem 1rem;
-    border-radius: 2px;
-    font-size: 1.2em;
-  }
-  .preuzmi-btn:hover{
-      background-color: #95070a;
-  }
-  .pdf-image{
-      max-width: 140px;
-      margin: 0 auto;
-      margin-top:1rem;
+  min-width: 120px;
+  display: inline-block;
+  background-color: var(--darkRed);
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0rem;
+  padding: 0.2rem 1rem;
+  border-radius: 2px;
+  font-size: 1.2em;
+}
+.preuzmi-btn:hover {
+  background-color: #95070a;
+}
+.pdf-image {
+  max-width: 140px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.katalog-opis {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-top: 0rem;
+}
 
-  }
-  .katalog-opis {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-    margin: 1rem auto;
-    text-align: center;
-    margin-top:0rem;
-  }
+#katalozikamioni .one-third {
+  flex-basis: 25%;
+}
+#katalozikamioni .preuzmi-btn {
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  font-size: 1.1em;
+}
 
-  #katalozikamioni .one-third{
-    flex-basis:25%;
-  }
-  #katalozikamioni .preuzmi-btn{
-    padding: 0.2rem 0.5rem;
-    border-radius: 2px;
-    font-size: 1.1em;
-  }
+.linktodocs h2 {
+  font-weight: 400;
+  margin-left: 0;
+  font-size: 1.1rem;
+}
+.linktodocs a {
+  text-decoration: none;
+  color: rgb(22, 22, 22);
+  display: inline-block;
+  background-color: #e6e6e9;
+  padding: 0.1em 1em;
+}
+.linktodocs a:hover {
+  color: black;
+  background-color: #cacacf;
+}
 
-  .linktodocs h2{
-    font-weight: 400;
-    margin-left:0;
-    font-size:1.1rem;
-  }
-  .linktodocs a{
-    text-decoration: none;
-    color:rgb(22, 22, 22);
-    display: inline-block;
-    background-color: #e6e6e9;
-    padding: 0.1em 1em;
-  }
-  .linktodocs a:hover{
-    color:black;
-    background-color: #cacacf;
-  }
+
+
+.car-image{
+  position:relative;
+  z-index: 2;
+}
+
+nav{
+  z-index: 100;
+  position: relative;
+}

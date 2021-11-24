@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="container">
-                <nav  id="main-navigation" class="hidden">
+                <nav id="main-navigation" class="hidden-menu">
                     <ul class="main-navigation flex">
                         <li class="active">
                             <a class="menuItem" href="index.html#dmax">
@@ -337,11 +337,11 @@
     function togglem() {
         var x = document.getElementById("main-navigation");
 
-        if (x.classList.contains("hidden")) {
-            x.classList.remove("hidden")
+        if (x.classList.contains("hidden-menu")) {
+            x.classList.remove("hidden-menu")
         }
         else {
-            x.classList.add("hidden")
+            x.classList.add("hidden-menu")
         }
 
     }

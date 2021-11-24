@@ -5,7 +5,7 @@
     <script>
         function openm() {
             var x = document.getElementById("main-navigation");
-            x.classList.toggle("hidden")
+            x.classList.toggle("hidden-menu")
         }
     </script>
     <meta charset="UTF-8">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="container">
-                <nav  id="main-navigation" class="hidden">
+                <nav id="main-navigation" class="hidden-menu">
                     <ul class="main-navigation flex">
                         <li class="active">
                             <a class="menuItem" href="index.html#dmax">
@@ -207,9 +207,15 @@
 
         <div class="container">
             <div class="linktodocs text-center ">
-               <a href="katalozi.html#katalozi"> <h2> Katalozi </h2></a>
-               <a href="cjenovnici.html"> <h2> Cjenovnici </h2></a>
-               <a href="docs/ENG-Katalog-Dodatne-Opreme_D-MAX-N60-ENG.pdf"> <h2> Dodatna oprema </h2></a>
+                <a href="katalozi.html#katalozi">
+                    <h2> Katalozi </h2>
+                </a>
+                <a href="cjenovnici.html">
+                    <h2> Cjenovnici </h2>
+                </a>
+                <a href="docs/ENG-Katalog-Dodatne-Opreme_D-MAX-N60-ENG.pdf">
+                    <h2> Dodatna oprema </h2>
+                </a>
             </div>
         </div>
 
@@ -253,7 +259,8 @@
                     </div>
 
                     <div class="car-image">
-                        <img id="crew" src="images/crew/ISUZU_D-Max_Obsidian-Gray.png" alt="" class="img-resp" style="transform: scale(1.1);">
+                        <img id="crew" src="images/crew/ISUZU_D-Max_Obsidian-Gray.png" alt="" class="img-resp"
+                            style="transform: scale(1.1);">
                     </div>
 
                     <div id="crew-variant" class="variant">
@@ -353,8 +360,12 @@
         </div>
         <div class="container">
             <div class="linktodocs text-center ">
-               <a href="katalozi.html#katalozikamioni"> <h2> Katalozi </h2></a>
-               <a href="cjenovnici.html"> <h2> Cjenovnici </h2></a>
+                <a href="katalozi.html#katalozikamioni">
+                    <h2> Katalozi </h2>
+                </a>
+                <a href="cjenovnici.html">
+                    <h2> Cjenovnici </h2>
+                </a>
 
             </div>
         </div>
@@ -578,8 +589,9 @@
 
     <footer class="black" id="kontakt">
         <div class="container">
-            <div style="display: block; margin: 0  auto; position: relative; top:-2.5rem; max-width: 160px; background-color: rgb(24, 24, 27); padding:1rem 1.4rem;">
-                <img src="images/isuzu-logo.svg" alt="" class="img-resp" >
+            <div
+                style="display: block; margin: 0  auto; position: relative; top:-2.5rem; max-width: 160px; background-color: rgb(24, 24, 27); padding:1rem 1.4rem;">
+                <img src="images/isuzu-logo.svg" alt="" class="img-resp">
             </div>
 
         </div>
@@ -602,10 +614,11 @@
 
             <div class="one-third">
                 <p class="clean-top"><strong>Prodaja vozila:<br>
-                    Tel</strong> +387 51 490 999<br>
-                <a href="mailto:prodaja@metago.info" target="_blank">prodaja@<span class="il">metago</span>.info<br>
-                </a><a href="mailto:prodaja@metago.info" target="_blank">prodaja1@<span class="il">metago</span>.info</a>
-            </p>
+                        Tel</strong> +387 51 490 999<br>
+                    <a href="mailto:prodaja@metago.info" target="_blank">prodaja@<span class="il">metago</span>.info<br>
+                    </a><a href="mailto:prodaja@metago.info" target="_blank">prodaja1@<span
+                            class="il">metago</span>.info</a>
+                </p>
             </div>
 
         </div>
@@ -625,13 +638,14 @@
     function togglem() {
         var x = document.getElementById("main-navigation");
 
-        if (x.classList.contains("hidden")) {
-            x.classList.remove("hidden")
+        if (x.classList.contains("hidden-menu")) {
+            x.classList.remove("hidden-menu")
         }
         else {
-            x.classList.add("hidden")
+            x.classList.add("hidden-menu")
         }
 
     }
 </script>
+
 </html>
