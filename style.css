@@ -320,6 +320,11 @@ Car Tab
   display: inline-block;
 }
 
+.dot:hover{
+  transform: scale(1.3);
+
+}
+
 /*
 ----------------------------
 End:::Car Tab
