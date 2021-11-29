@@ -471,6 +471,7 @@ footer a:hover {
   display: inline-block;
   background-color: #e6e6e9;
   padding: 0.1em 1em;
+  margin:0.4rem 0.3rem;
 }
 .linktodocs a:hover {
   color: black;
