@@ -2,10 +2,8 @@
 // if the url field is empty, but the message field isn't
 if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 
-	// put your email address here
-	//$youremail = 'woltez@gmail.com, natashawolt@gmail.com';
 
-	$youremail = 'woltez@gmail.com';
+	$youremail = 'goran@metago.info, prodaja1@metago.info, isuzu@xdmr.us';
 
 	$body = "Isuzu.ba - Novi upit od:
 	Name:  $_POST[name]
